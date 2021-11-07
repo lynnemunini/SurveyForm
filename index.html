@@ -1,0 +1,129 @@
+<html>
+<head>
+    <link rel="stylesheet" href="survey.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script></head>
+<body>
+  <div class="container">
+  <h1 id="title"> Covid-19 Pandemic Survey Form</h1><hr>
+  <p id="description">Thank you for taking your time to contribute on <span id="bold">Corona Virus's impact in Kenya</span>.<br/>Your opinion matters.</p>
+  <form id="survey-form" role="form">
+     <div class="form-group">
+       <label id="name-label" for="name">Name</label><br>
+       <input style="width: 300px; height: 35px; border-radius: 5px;" type="text" class="form-control" id="name" placeholder="Enter your name" required>
+     </div>
+     <div class="form-group">
+      <label id="email-label" for="email">Email address</label><br>
+    <input style="width: 300px; height: 35px; border-radius: 5px;" type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+     </div>
+    <div class="form-group">
+      <label id="tel-label">Phone Number</label><br>
+    <input style="width: 300px; height: 35px; border-radius: 5px;" type="tel" class="form-control" id="tel" placeholder="0123456789" required>
+     </div>
+    <div class="form-group">
+    <label id="number-label" for="number">Age</label><br>
+    <input style="width: 300px; height: 35px; border-radius: 5px;" type="number" class="form-control" id="number" min="10" max="99" placeholder="Age">
+  </div>
+    <div class="form-group">
+      <label id="gender-label" >Gender</label><br>
+<input class="big" type="radio" name="gender" value="male">Male
+<input class="big" type="radio" name="gender" value="female">Female
+    </div>
+    <div class="form-group">
+      <p>Which option best describes what you do?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select role</option>
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="selfEmployed">Self Employed</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+   <div class="form-group"><hr>
+     <p>What do you think will happen to the <abbr title="Gross Domestic Product">GDP</abbr> growth rate in Kenya?</p>
+     <input class="big" type="radio" name="opinion" value="Contract significantly">Contract significantly<br>
+<input class="big" type="radio" name="opinion" value="Not sure">Not sure<br>
+<input class="big" type="radio" name="opinion" value="Improve">Improve<br>
+  </div>
+  <div class="form-group">
+    <p>With limited flights and weak demand in major markets in Europe and Asia, the agricultural sector particularly the floriculture and horticulture industry are being hit hard. This has in return led to many workers being laid off. How do you think the government can help such families.</p>
+    <textarea
+        id="help"
+        class="input-textarea"
+        name="help"
+        placeholder="Enter your answer here..."
+      ></textarea>
+  </div>
+  <div class="form-group">
+    <p>Do you think the social distancing measures including curfews and partial lockdowns enforced are doing much to curb the spread?</p>
+    <label><input class="big" type="radio" name="distancingMeasures" value="Certainly">Certainly</label><br>
+    <label><input class="big" type="radio" name="distancingMeasures" value="No">No</label><br>
+     <label><input class="big" type="radio" name="distancingMeasures" value="More can be done">More can be done</label><br>
+  </div>
+  <div class="form-group">
+    <p>Clearly, the government did a great job by addressing the novel coronavirus at its early stages. What other measures can it take to ensure the containment of the virus? (Check all that apply)</p>
+    <label
+        ><input
+          name="recommendation"
+          value="Complete lockdown"
+          type="checkbox"
+          class="input-checkbox"
+        />Complete lockdown</label
+      ><br>
+      <label>
+        <input
+          name="recommendation"
+          value="Better data collection to enable more targeted health responses"
+          type="checkbox"
+          class="input-checkbox"
+        />Better data collection to enable more targeted health responses</label
+      ><br>
+    <label>
+        <input
+          name="recommendation"
+          value="Close all companies and organisations"
+          type="checkbox"
+          class="input-checkbox"
+               />Close all companies and organisations</label><br>
+      <label>
+        <input
+          name="recommendation"
+          value="Put in place more measures to improve public health hygiene"
+          type="checkbox"
+          class="input-checkbox"
+        />Put in place more measures to improve public health hygiene</label
+      ><br>
+  </div>
+  <div class="form-group">
+    <p>The restrictions put in place such as public health hygiene are hard to maintain and the common mwananchi is getting tired of staying at home without providence, should the government allow the daily activities to return to normal?</p>
+    <label><input class="big" type="radio" name="activities" value="Definitely">Definitely</label><br>
+    <label><input class="big" type="radio" name="activities" value="Absolutely not">Absolutely not</label><br>
+     <label><input class="big" type="radio" name="activities" value="I'm not sure">
+       I'm not sure</label><br>
+  </div>
+   <div class="form-group">
+    <p>Research and predictions have it that, Covid-19 could become a fixture in our lives for the next several years. What do you think the people and institutions should do to adapt to living with the virus?</p>
+    <textarea
+        id="adapt"
+        class="input-textarea"
+        name="help"
+        placeholder="Enter your answer here..."
+      ></textarea>
+  </div>
+  <div class="form-group">
+    <p>Covid-19 will definitely have a major impact on the country, do you believe that this is also a threat to you personally?</p>
+    <label><input class="big" type="radio" name="impact" value="No">No</label><br>
+    <label><input class="big" type="radio" name="impact" value="I can't tell">I can't tell</label><br>
+    <label><input class="big" type="radio" name="impact" value="Yes">Yes</label><br>
+  </div>
+      <div class="form-group" style="text-align: center;"><br>
+      <button type="submit" id="submit" class="bton">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

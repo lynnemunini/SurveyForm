@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+body {
+  font-family: 'Caveat', cursive;;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: light silver; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+      115deg,
+      rgba(240,248,255,0.5),
+      rgba(245,245,220, 0.4)
+    ), url(https://www.ke.undp.org/content/dam/kenya/img/Environment%20&%20Energy/UNDP-KE-SLM.jpg/_jcr_content/renditions/original);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#title{
+  text-align: center;
+  text-decoration: none ;
+  color: #BDB76B;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 30px;
+}
+.container {
+  width: 100%;
+  margin: 2.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+form {
+  background: rgb(0, 151, 19, 0.1);
+  padding: 10px;
+  text-align:justify
+  border-radius: 10px;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+#bold{
+  color: #2F4F4F;
+}
+#bold:hover{
+  color: #E9967A;
+}
+#description{
+  text-align: center;
+  font-size: 30px;
+}
+input,button,select,textarea {
+  font-family: inherit;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+textarea{
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  border: dashed 0.7px #FFDAB9;
+  font-size: 24px;
+}
+select{
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+}
+.input-checkbox{
+  width: 40px;
+  height: 20px;
+}
+.big{
+  width: 20px;
+  height: 20px;
+}
+.bton{
+  width: 300px;
+  height: 40px;
+  background-color: #DAA520;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
